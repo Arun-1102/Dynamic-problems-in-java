@@ -1,5 +1,6 @@
 package Accenture;
 import java.util.*;
+import java.lang.*;
 public class qualify_margin {
     public static void main(String[] args) {
         Scanner scan=new Scanner(System.in);
@@ -14,7 +15,7 @@ public class qualify_margin {
 
         int t=Arrays.stream(a).sum();
 
-        t=(r*n)-t;
+        t=Math.abs((r*n)-t);
         System.out.print(t<m?t:-1);
     }
 }
